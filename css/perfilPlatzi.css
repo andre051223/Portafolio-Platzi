@@ -1,0 +1,932 @@
+/* =================================
+   PERFIL DE PLATZI - ESTILOS
+   ================================= */
+
+/* Hero Section del Perfil */
+.profile-hero {
+  position: relative;
+  min-height: 500px;
+  padding-top: 120px;
+  padding-bottom: var(--spacing-xxl);
+  overflow: hidden;
+}
+
+.profile-background {
+  display: none;
+}
+
+.profile-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-lg);
+}
+
+/* Avatar con bandera */
+.profile-avatar-wrapper {
+  position: relative;
+}
+
+.avatar-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+.profile-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid var(--text-primary);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  object-fit: cover;
+  background: var(--dark-secondary);
+}
+
+.country-flag {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid var(--text-primary);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.flag-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Información del perfil */
+.profile-info {
+  max-width: 700px;
+}
+
+.profile-name {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-username {
+  font-size: 1.25rem;
+  color: var(--platzi-green-light);
+  margin-bottom: var(--spacing-md);
+  font-weight: 500;
+}
+
+.profile-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.profile-badges {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.875rem;
+  font-weight: 600;
+  backdrop-filter: blur(10px);
+  border: 1px solid;
+  transition: all 0.3s ease;
+}
+
+.badge-student {
+  background: rgba(12, 206, 135, 0.1);
+  border-color: var(--platzi-green);
+  color: var(--platzi-green-light);
+}
+
+.badge-active {
+  background: rgba(255, 165, 0, 0.1);
+  border-color: #ff9500;
+  color: #ffb340;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(12, 206, 135, 0.2);
+}
+
+/* =================================
+   SECCIÓN DE ESTADÍSTICAS
+   ================================= */
+
+.stats-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--dark-bg);
+}
+
+.stats-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+  background: linear-gradient(135deg, var(--platzi-green), var(--platzi-green-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.stat-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--platzi-green), var(--platzi-green-light));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(12, 206, 135, 0.2);
+  border-color: var(--platzi-green);
+}
+
+.stat-card:hover::before {
+  transform: scaleX(1);
+}
+
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: rgba(12, 206, 135, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--platzi-green);
+}
+
+.stat-content {
+  margin-bottom: var(--spacing-md);
+}
+
+.stat-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.stat-unit {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.stat-description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+/* Barra de progreso especial para la racha */
+.stat-progress {
+  margin-top: var(--spacing-md);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: var(--spacing-xs);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--platzi-green), var(--platzi-green-light));
+  border-radius: 100px;
+  transition: width 1s ease;
+  box-shadow: 0 0 10px var(--platzi-green);
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+/* Colores específicos para cada tarjeta */
+.streak-card .stat-icon {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.score-card .stat-icon {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+
+.questions-card .stat-icon {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.answers-card .stat-icon {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+/* =================================
+   ESCUELAS FAVORITAS
+   ================================= */
+
+.schools-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--dark-secondary);
+}
+
+.schools-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.school-card {
+  position: relative;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xl);
+  overflow: hidden;
+  transition: all 0.4s ease;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.school-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  opacity: 0.1;
+  transition: opacity 0.4s ease;
+}
+
+.english-card .school-gradient {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+}
+
+.programming-card .school-gradient {
+  background: linear-gradient(135deg, var(--platzi-green), #10b981);
+}
+
+.ai-card .school-gradient {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.school-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 48px rgba(12, 206, 135, 0.3);
+}
+
+.school-card:hover .school-gradient {
+  opacity: 0.2;
+}
+
+.school-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.school-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-lg);
+  background: rgba(12, 206, 135, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  color: var(--platzi-green);
+  transition: all 0.3s ease;
+}
+
+.english-card .school-icon {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.programming-card .school-icon {
+  background: rgba(12, 206, 135, 0.1);
+  color: var(--platzi-green);
+}
+
+.ai-card .school-icon {
+  background: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+
+.school-card:hover .school-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.school-name {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.school-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+  flex: 1;
+}
+
+.school-stats {
+  display: flex;
+  gap: var(--spacing-lg);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--glass-border);
+}
+
+.school-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--platzi-green);
+}
+
+.english-card .stat-number {
+  color: #3b82f6;
+}
+
+.ai-card .stat-number {
+  color: #8b5cf6;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* =================================
+   LOGROS Y CERTIFICACIONES
+   ================================= */
+
+.achievements-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--dark-bg);
+}
+
+.achievements-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.achievement-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, var(--platzi-green), #8b5cf6, #3b82f6);
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(12, 206, 135, 0.3);
+}
+
+.achievement-card:hover::before {
+  opacity: 0.5;
+}
+
+.achievement-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.achievement-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(12, 206, 135, 0.1);
+  color: var(--platzi-green);
+}
+
+.certificate-icon {
+  background: rgba(59, 130, 246, 0.1);
+  color: #3b82f6;
+}
+
+.school-icon {
+  background: rgba(12, 206, 135, 0.1);
+  color: var(--platzi-green);
+}
+
+.medal-icon {
+  background: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.achievement-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.achievement-content {
+  padding-left: calc(60px + var(--spacing-md));
+}
+
+.achievement-number {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--platzi-green), var(--platzi-green-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.achievement-description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Mini estadísticas */
+.achievement-progress {
+  margin-top: var(--spacing-md);
+}
+
+.mini-stats {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.mini-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.mini-stat svg {
+  color: var(--platzi-green);
+}
+
+/* Lista de escuelas completadas */
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-md);
+}
+
+.completed-school {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  padding: 0.5rem;
+  background: rgba(12, 206, 135, 0.05);
+  border-radius: var(--radius-sm);
+}
+
+.school-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--platzi-green);
+  flex-shrink: 0;
+}
+
+/* Showcase de medallas */
+.medals-showcase {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.medal {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+  transition: all 0.3s ease;
+}
+
+.gold-medal {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  border-color: #ffd700;
+  color: #fff;
+}
+
+.silver-medal {
+  background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+  border-color: #c0c0c0;
+  color: #fff;
+}
+
+.bronze-medal {
+  background: linear-gradient(135deg, #cd7f32, #d4a574);
+  border-color: #cd7f32;
+  color: #fff;
+}
+
+.medal:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* =================================
+   CTA SECTION
+   ================================= */
+
+.cta-section {
+  padding: var(--spacing-xxl) 0;
+  background: var(--dark-secondary);
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.cta-content {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-xxl);
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.cta-description {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-xl);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--platzi-green), var(--platzi-green-light));
+  color: white;
+  box-shadow: 0 4px 16px rgba(12, 206, 135, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(12, 206, 135, 0.4);
+}
+
+.btn-secondary {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+  border-color: var(--platzi-green);
+  background: rgba(12, 206, 135, 0.1);
+}
+
+/* =================================
+   FOOTER
+   ================================= */
+
+.footer {
+  background: var(--dark-bg);
+  padding: var(--spacing-xl) 0 var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+  flex-wrap: wrap;
+  gap: var(--spacing-lg);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--platzi-green);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--glass-border);
+}
+
+.footer-bottom p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* =================================
+   RESPONSIVE
+   ================================= */
+
+@media (max-width: 768px) {
+  .profile-name {
+    font-size: 2rem;
+  }
+
+  .profile-username {
+    font-size: 1rem;
+  }
+
+  .profile-description {
+    font-size: 1rem;
+  }
+
+  .profile-avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .avatar-container {
+    width: 140px;
+    height: 140px;
+  }
+
+  .country-flag {
+    width: 40px;
+    height: 40px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .stat-value {
+    font-size: 2rem;
+  }
+
+  .school-name {
+    font-size: 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-content {
+    padding: var(--spacing-lg);
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats-grid,
+  .schools-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-hero {
+    padding-top: 100px;
+  }
+
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .avatar-container {
+    width: 120px;
+    height: 120px;
+  }
+
+  .country-flag {
+    width: 35px;
+    height: 35px;
+  }
+
+  .profile-name {
+    font-size: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .achievement-content {
+    padding-left: 0;
+  }
+
+  .achievement-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}

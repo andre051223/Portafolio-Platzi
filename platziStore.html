@@ -1,0 +1,678 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Platzi Merch Store - Diego López</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/platziStore.css">
+  <meta name="description" content="Platzi Store - Los mejores cursos y productos para tu carrera tech">
+
+  <meta property="og:title" content="Platzi Store - Diego López">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Platzi Store">
+
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9F3mcx5zc3M0Wv5k0tA9f7I_-90MDyFTWpg&s">
+
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#0cce87">
+</head>
+
+<body>
+  <!-- Navegación flotante -->
+  <nav class="floating-nav">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="img/platzi.png" alt="Platzi">
+        <span>Platzi Store</span>
+      </div>
+      <div class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="#products">Productos</a>
+        <a href="#categories">Categorías</a>
+        <a href="#cart" class="cart-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="store-hero">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Viste tu pasión por la <span class="platzi-green">Tecnología</span></h1>
+          <p class="hero-subtitle">Descubre la colección oficial de merchandise Platzi: ropa, accesorios y más para mostrar tu amor por el aprendizaje</p>
+          <div class="hero-stats">
+            <div class="stat-card">
+              <div class="stat-number">+50</div>
+              <div class="stat-label">Productos únicos</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Calidad premium</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">Envios</div>
+              <div class="stat-label">A todo el mundo</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías -->
+    <section id="categories" class="categories-section">
+      <div class="container">
+        <h2 class="section-title">Explora por <span class="platzi-green">Categoría</span></h2>
+        <div class="categories-grid">
+          <div class="category-card" data-category="camisetas">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.38 3.46L16 2a4 4 0 01-8 0L3.62 3.46a2 2 0 00-1.34 2.23l.58 3.47a1 1 0 00.99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 002-2V10h2.15a1 1 0 00.99-.84l.58-3.47a2 2 0 00-1.34-2.23z"></path>
+              </svg>
+            </div>
+            <h3>Camisetas</h3>
+            <p>T-shirts y polos de algodón</p>
+            <span class="category-count">15 diseños</span>
+          </div>
+
+          <div class="category-card" data-category="hoodies">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2a7 7 0 00-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 001 1h6a1 1 0 001-1v-2.26A6.995 6.995 0 0019 9a7 7 0 00-7-7z"></path>
+                <path d="M8.5 21.5h7M10 18v4M14 18v4"></path>
+              </svg>
+            </div>
+            <h3>Hoodies & Sudaderas</h3>
+            <p>Con y sin capucha</p>
+            <span class="category-count">12 modelos</span>
+          </div>
+
+          <div class="category-card" data-category="accesorios">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h3>Accesorios</h3>
+            <p>Gorras, mochilas, stickers</p>
+            <span class="category-count">20+ items</span>
+          </div>
+
+          <div class="category-card" data-category="tazas">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 010 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"></path>
+              </svg>
+            </div>
+            <h3>Tazas & Mugs</h3>
+            <p>Cerámica de alta calidad</p>
+            <span class="category-count">8 diseños</span>
+          </div>
+
+          <div class="category-card" data-category="tech">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3>Tech Accessories</h3>
+            <p>Fundas, mouse pads, USB</p>
+            <span class="category-count">10 productos</span>
+          </div>
+
+          <div class="category-card" data-category="coleccion">
+            <div class="category-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3>Colección Especial</h3>
+            <p>Ediciones limitadas</p>
+            <span class="category-count">5 exclusivos</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Productos Destacados -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Productos <span class="platzi-green">Destacados</span></h2>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="ropa">Ropa</button>
+            <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+            <button class="filter-btn" data-filter="coleccionable">Coleccionables</button>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!-- Producto 1 -->
+          <div class="product-card" data-type="ropa">
+            <div class="product-badge">Más Popular</div>
+            <div class="product-image">
+              <img src="img/hoodiePlatzi.png" alt="Hoodie Platzi Verde">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+
+            <div class="product-info">
+              <span class="product-category">Hoodie</span>
+              <h3 class="product-title">Hoodie Platzi Classic Verde</h3>
+              <p class="product-description">Sudadera con capucha 100% algodón premium con logo bordado. Diseño cómodo y moderno.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                      <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                    S, M, L, XL
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    Premium
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 4.9</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-old">$59</span>
+                  <span class="price-current">$45</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Hoodie Platzi Classic Verde" data-price="45">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="product-card" data-type="ropa">
+            <div class="product-badge expert">Edición Limitada</div>
+            <div class="product-image">
+              <img src="img/camisetaPlatzi.png" alt="Camiseta Never Stop Learning">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Camiseta</span>
+              <h3 class="product-title">Camiseta "Never Stop Learning"</h3>
+              <p class="product-description">T-shirt 100% algodón orgánico con estampado exclusivo. Corte unisex, perfecto para el día a día.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                      <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                    </svg>
+                    XS-XXL
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Stock limitado
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 5.0</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-old">$29</span>
+                  <span class="price-current">$22</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Camiseta Never Stop Learning" data-price="22">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <div class="product-card" data-type="accesorios">
+            <div class="product-image">
+              <img src="img/mugPlatzi.png" alt="Taza Platzi">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Taza</span>
+              <h3 class="product-title">Taza Platzi Code & Coffee</h3>
+              <p class="product-description">Taza de cerámica de 350ml con diseño minimalista. Apta para microondas y lavavajillas.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M18 8h1a4 4 0 010 8h-1"></path>
+                      <path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"></path>
+                    </svg>
+                    350ml
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    Cerámica
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 4.8</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$15</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Taza Platzi Code & Coffee" data-price="15">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <div class="product-card" data-type="accesorios">
+            <div class="product-image">
+              <img src="img/gorraPlatzi.png" alt="Gorra Platzi">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Gorra</span>
+              <h3 class="product-title">Gorra Platzi Trucker</h3>
+              <p class="product-description">Gorra tipo trucker con logo bordado. Ajustable, perfecta para cualquier ocasión.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="8" x2="12" y2="16"></line>
+                      <line x1="8" y1="12" x2="16" y2="12"></line>
+                    </svg>
+                    Ajustable
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    Unisex
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 4.9</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$18</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Gorra Platzi Trucker" data-price="18">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <div class="product-card" data-type="accesorios">
+            <div class="product-image">
+              <img src="img/mochilaPlatzi.png" alt="Mochila Platzi">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Mochila</span>
+              <h3 class="product-title">Mochila Laptop Platzi Pro</h3>
+              <p class="product-description">Mochila premium con compartimento para laptop hasta 15". Resistente al agua con múltiples bolsillos.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    Hasta 15"
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                      <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    25L
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 4.9</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-old">$69</span>
+                  <span class="price-current">$55</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Mochila Laptop Platzi Pro" data-price="55">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+          <div class="product-card" data-type="coleccionable">
+            <div class="product-image">
+              <img src="img/stickersPlatzi.png" alt="Pack Stickers">
+              <div class="product-overlay">
+                <button class="quick-view-btn">Vista rápida</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">Coleccionable</span>
+              <h3 class="product-title">Pack de Stickers Platzi</h3>
+              <p class="product-description">Set de 20 stickers con diseños exclusivos de Platzi. Resistentes al agua, perfectos para laptop.</p>
+              <div class="product-meta">
+                <div class="product-stats">
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    20 unidades
+                  </span>
+                  <span class="stat">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    </svg>
+                    Vinilo
+                  </span>
+                </div>
+                <div class="product-rating">
+                  <span>⭐ 4.8</span>
+                </div>
+              </div>
+              <div class="product-footer">
+                <div class="product-price">
+                  <span class="price-current">$8</span>
+                </div>
+                <button class="add-to-cart-btn" data-product="Pack de Stickers Platzi" data-price="8">
+                  Agregar al carrito
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrito Lateral -->
+    <div id="cart" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>Tu Carrito</h3>
+        <button class="close-cart-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="cart-items">
+        <div class="empty-cart">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <p>Tu carrito está vacío</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span class="total-amount">$0</span>
+        </div>
+        <button class="checkout-btn">Proceder al pago</button>
+        <button class="continue-shopping-btn">Seguir comprando</button>
+      </div>
+    </div>
+
+    <!-- Overlay del carrito -->
+    <div class="cart-overlay"></div>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>¿Listo para llevar tu estilo Platzi?</h2>
+          <p>Únete a la comunidad y muestra tu pasión por el aprendizaje continuo</p>
+          <div class="cta-buttons">
+            <button class="cta-button primary">Ver colección completa</button>
+            <button class="cta-button secondary">Ofertas especiales</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="store-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <img src="img/platzi.png" alt="Platzi">
+            <span>Platzi Store</span>
+          </div>
+          <p>Merchandise oficial de Platzi. Productos de alta calidad para la comunidad tech más grande de Latinoamérica.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Productos</h4>
+          <ul>
+            <li><a href="#ropa">Ropa</a></li>
+            <li><a href="#accesorios">Accesorios</a></li>
+            <li><a href="#coleccionables">Coleccionables</a></li>
+            <li><a href="#ediciones-especiales">Ediciones Limitadas</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Recursos</h4>
+          <ul>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#podcast">Podcast</a></li>
+            <li><a href="#community">Comunidad</a></li>
+            <li><a href="#help">Centro de Ayuda</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Platzi Store - Diego López. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script>
+    // Funcionalidad del carrito
+    const cart = [];
+    const cartSidebar = document.querySelector('.cart-sidebar');
+    const cartOverlay = document.querySelector('.cart-overlay');
+    const cartCount = document.querySelector('.cart-count');
+    const cartItems = document.querySelector('.cart-items');
+    const totalAmount = document.querySelector('.total-amount');
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+    const cartLink = document.querySelector('.cart-link');
+    const closeCartBtn = document.querySelector('.close-cart-btn');
+    const continueShoppingBtn = document.querySelector('.continue-shopping-btn');
+
+    // Abrir carrito
+    cartLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      cartSidebar.classList.add('active');
+      cartOverlay.classList.add('active');
+    });
+
+    // Cerrar carrito
+    const closeCart = () => {
+      cartSidebar.classList.remove('active');
+      cartOverlay.classList.remove('active');
+    };
+
+    closeCartBtn.addEventListener('click', closeCart);
+    cartOverlay.addEventListener('click', closeCart);
+    continueShoppingBtn.addEventListener('click', closeCart);
+
+    // Agregar al carrito
+    addToCartBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const product = btn.dataset.product;
+        const price = parseFloat(btn.dataset.price);
+        
+        cart.push({ product, price });
+        updateCart();
+        
+        // Animación del botón
+        btn.textContent = '¡Agregado!';
+        btn.style.background = 'var(--platzi-green)';
+        setTimeout(() => {
+          btn.textContent = 'Agregar al carrito';
+          btn.style.background = '';
+        }, 1500);
+      });
+    });
+
+    // Actualizar carrito
+    function updateCart() {
+      cartCount.textContent = cart.length;
+      
+      if (cart.length === 0) {
+        cartItems.innerHTML = `
+          <div class="empty-cart">
+            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <p>Tu carrito está vacío</p>
+          </div>
+        `;
+        totalAmount.textContent = '$0';
+        return;
+      }
+
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      totalAmount.textContent = `$${total}`;
+
+      cartItems.innerHTML = cart.map((item, index) => `
+        <div class="cart-item">
+          <div class="cart-item-info">
+            <h4>${item.product}</h4>
+            <p class="cart-item-price">$${item.price}</p>
+          </div>
+          <button class="remove-item-btn" data-index="${index}">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      `).join('');
+
+      // Eventos para eliminar items
+      document.querySelectorAll('.remove-item-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const index = parseInt(btn.dataset.index);
+          cart.splice(index, 1);
+          updateCart();
+        });
+      });
+    }
+
+    // Filtros de productos
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.dataset.filter;
+        
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        productCards.forEach(card => {
+          if (filter === 'all' || card.dataset.type === filter) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Animación de categorías
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const category = card.dataset.category;
+        console.log('Categoría seleccionada:', category);
+        // Aquí puedes agregar lógica para filtrar por categoría
+      });
+    });
+  </script>
+</body>
+
+</html>

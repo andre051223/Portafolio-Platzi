@@ -1,0 +1,402 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi Perfil - Platzi Platform</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/perfilPlatzi.css">
+<meta name="description" content="Perfil de estudiante en Platzi - Mi progreso y logros">
+
+<meta property="og:title" content="Mi Perfil - Platzi Platform">
+<meta property="og:type" content="website">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+<meta property="og:image:alt" content="Platzi Student Profile">
+
+<link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9F3mcx5zc3M0Wv5k0tA9f7I_-90MDyFTWpg&s">
+
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#0cce87">
+</head>
+
+<body>
+<!-- Navegación flotante -->
+<nav class="floating-nav">
+<div class="nav-container">
+    <div class="nav-logo">
+    <img src="img/platzi.png" alt="Platzi">
+    <span>Mi Perfil</span>
+    </div>
+    <div class="nav-links">
+    <a href="index.html">Inicio</a>
+    <a href="platziNavbar.html">Explorar</a>
+    <a href="platziStore.html">Tienda</a>
+    <a href="#stats">Estadísticas</a>
+    </div>
+</div>
+</nav>
+
+<main>
+<!-- Hero Section con Información del Estudiante -->
+<section class="profile-hero">
+    <div class="profile-background"></div>
+    <div class="profile-container">
+    <div class="profile-header">
+        <div class="profile-avatar-wrapper">
+        <div class="avatar-container">
+            <img src="img/Diego-2.png" alt="Diego López" class="profile-avatar">
+            <div class="country-flag">
+            <img src="https://flagcdn.com/w80/co.png" alt="Colombia" class="flag-img">
+            </div>
+        </div>
+        </div>
+        <div class="profile-info">
+        <h1 class="profile-name">Diego López</h1>
+        <p class="profile-username">@Diego.2206</p>
+        <p class="profile-description">
+            Frontend Developer y Especialista en Inteligencia Artificial
+        </p>
+        <div class="profile-badges">
+            <span class="badge badge-student">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+            Estudiante con Suscripción Expert
+            </span>
+            
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Estadísticas principales -->
+<section class="stats-section">
+    <div class="stats-container">
+    <h2 class="section-title">Mi Progreso</h2>
+    
+    <!-- Grid de estadísticas -->
+    <div class="stats-grid">
+        <!-- Racha de estudio -->
+        <div class="stat-card streak-card">
+        <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
+        </div>
+        <div class="stat-content">
+            <h3 class="stat-title">Racha Actual</h3>
+            <p class="stat-value">22 <span class="stat-unit">semanas</span></p>
+            <p class="stat-description">¡Sigue así! Estás en tu mejor momento</p>
+        </div>
+        <div class="stat-progress">
+            <div class="progress-bar">
+            <div class="progress-fill" style="width: 88%"></div>
+            </div>
+            <p class="progress-text">88% hacia las 25 semanas</p>
+        </div>
+        </div>
+
+        <!-- Puntaje total -->
+        <div class="stat-card score-card">
+        <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+        </div>
+        <div class="stat-content">
+            <h3 class="stat-title">Puntaje Total</h3>
+            <p class="stat-value">48.985 <span class="stat-unit">pts</span></p>
+            <p class="stat-description">Top 1% de estudiantes de Platzi</p>
+        </div>
+        </div>
+
+        <!-- Preguntas hechas -->
+        <div class="stat-card questions-card">
+        <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+        </div>
+        <div class="stat-content">
+            <h3 class="stat-title">Preguntas</h3>
+            <p class="stat-value">34</p>
+            <p class="stat-description">Participación activa en clases</p>
+        </div>
+        </div>
+
+        <!-- Respuestas dadas -->
+        <div class="stat-card answers-card">
+        <div class="stat-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            <polyline points="9 10 12 13 16 9"></polyline>
+            </svg>
+        </div>
+        <div class="stat-content">
+            <h3 class="stat-title">Respuestas</h3>
+            <p class="stat-value">587</p>
+            <p class="stat-description">Ayudando a la comunidad</p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Escuelas Favoritas -->
+<section class="schools-section">
+    <div class="schools-container">
+    <h2 class="section-title">Mis Escuelas Favoritas</h2>
+    <p class="section-subtitle">Las áreas de conocimiento que más me apasionan</p>
+    
+    <div class="schools-grid">
+        <!-- Escuela de Inglés -->
+        <div class="school-card english-card">
+        <div class="school-gradient"></div>
+        <div class="school-content">
+            <div class="school-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M9 12l2 2 4-4"></path>
+            </svg>
+            </div>
+            <h3 class="school-name">Escuela de Inglés</h3>
+            <p class="school-description">Mejorando mis habilidades de comunicación global</p>
+            <div class="school-stats">
+            <div class="school-stat">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Cursos</span>
+            </div>
+            <div class="school-stat">
+                <span class="stat-number">85%</span>
+                <span class="stat-label">Progreso</span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Escuela de Programación -->
+        <div class="school-card programming-card">
+        <div class="school-gradient"></div>
+        <div class="school-content">
+            <div class="school-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            </div>
+            <h3 class="school-name">Escuela de Programación</h3>
+            <p class="school-description">Dominando el arte del desarrollo web</p>
+            <div class="school-stats">
+            <div class="school-stat">
+                <span class="stat-number">28</span>
+                <span class="stat-label">Cursos</span>
+            </div>
+            <div class="school-stat">
+                <span class="stat-number">92%</span>
+                <span class="stat-label">Progreso</span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Escuela de IA -->
+        <div class="school-card ai-card">
+        <div class="school-gradient"></div>
+        <div class="school-content">
+            <div class="school-icon">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+            </div>
+            <h3 class="school-name">Escuela de Inteligencia Artificial</h3>
+            <p class="school-description">Explorando el futuro de la tecnología</p>
+            <div class="school-stats">
+            <div class="school-stat">
+                <span class="stat-number">15</span>
+                <span class="stat-label">Cursos</span>
+            </div>
+            <div class="school-stat">
+                <span class="stat-number">78%</span>
+                <span class="stat-label">Progreso</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Logros y Certificaciones -->
+<section class="achievements-section">
+    <div class="achievements-container">
+    <h2 class="section-title">Logros y Certificaciones</h2>
+    <p class="section-subtitle">Mi trayectoria de aprendizaje certificada</p>
+    
+    <div class="achievements-grid">
+        <!-- Cursos Certificados -->
+        <div class="achievement-card">
+        <div class="achievement-header">
+            <div class="achievement-icon certificate-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <path d="M9 15h6M9 11h6"></path>
+            </svg>
+            </div>
+            <h3 class="achievement-title">Cursos Certificados</h3>
+        </div>
+        <div class="achievement-content">
+            <div class="achievement-number">45</div>
+            <p class="achievement-description">Certificados obtenidos</p>
+            <div class="achievement-progress">
+            <div class="mini-stats">
+                <span class="mini-stat">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                45 Completados
+                </span>
+                <span class="mini-stat">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+                8 En progreso
+                </span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Escuelas Terminadas -->
+        <div class="achievement-card">
+        <div class="achievement-header">
+            <div class="achievement-icon school-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+            </div>
+            <h3 class="achievement-title">Escuelas Completadas</h3>
+        </div>
+        <div class="achievement-content">
+            <div class="achievement-number">7</div>
+            <p class="achievement-description">Escuelas terminadas</p>
+            <div class="achievement-list">
+            <div class="completed-school">
+                <span class="school-bullet"></span>
+                <span>Frontend Developer</span>
+            </div>
+            <div class="completed-school">
+                <span class="school-bullet"></span>
+                <span>JavaScript</span>
+            </div>
+            <div class="completed-school">
+                <span class="school-bullet"></span>
+                <span>React.js</span>
+            </div>
+            <div class="completed-school">
+                <span class="school-bullet"></span>
+                <span>+4 más</span>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Medallas y Reconocimientos -->
+        <div class="achievement-card">
+        <div class="achievement-header">
+            <div class="achievement-icon medal-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            </div>
+            <h3 class="achievement-title">Medallas Ganadas</h3>
+        </div>
+        <div class="achievement-content">
+            <div class="achievement-number">23</div>
+            <p class="achievement-description">Reconocimientos especiales</p>
+            <div class="medals-showcase">
+            <div class="medal gold-medal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </div>
+            <div class="medal silver-medal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </div>
+            <div class="medal bronze-medal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- CTA Final -->
+<section class="cta-section">
+    <div class="cta-container">
+    <div class="cta-content">
+        <h2 class="cta-title">Continúa tu viaje de aprendizaje</h2>
+        <p class="cta-description">Explora nuevos cursos y sigue mejorando tus habilidades</p>
+        <div class="cta-buttons">
+        <a href="platziNavbar.html" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            Explorar cursos
+        </a>
+        <a href="index.html" class="btn btn-secondary">
+            Volver al inicio
+        </a>
+        </div>
+    </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-container">
+    <div class="footer-content">
+    <div class="footer-logo">
+        <img src="img/platzi.png" alt="Platzi">
+        <p>Nunca pares de aprender</p>
+    </div>
+    <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="platziNavbar.html">Explorar</a>
+        <a href="platziStore.html">Tienda</a>
+        <a href="perfilPlatzi.html">Mi Perfil</a>
+    </div>
+    </div>
+    <div class="footer-bottom">
+    <p>&copy; 2024 Diego López - Platzi Platform. Proyecto educativo.</p>
+    </div>
+</div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+
+</html>
