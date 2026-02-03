@@ -127,6 +127,7 @@ li {
   gap: var(--spacing-xs);
   font-weight: 600;
   font-family: var(--font-heading);
+  white-space: nowrap;
 }
 
 .nav-logo img {
@@ -136,7 +137,8 @@ li {
 
 .nav-links {
   display: flex;
-  gap: var(--spacing-lg);
+  align-items: center;
+  gap: var(--spacing-md);
 }
 
 .nav-links a {
@@ -144,6 +146,8 @@ li {
   border-radius: var(--radius-sm);
   transition: all 0.3s ease;
   font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
 }
 
 .nav-links a:hover {
