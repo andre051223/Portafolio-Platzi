@@ -21,10 +21,10 @@ function initStaticNavigation() {
     const navLinks = document.querySelectorAll('.nav-links a');
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
             const targetId = this.getAttribute('href').substring(1);
             const targetSection = document.getElementById(targetId);
             if (targetSection) {
+                e.preventDefault(); // Solo prevenir si encontramos la sección
                 targetSection.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
